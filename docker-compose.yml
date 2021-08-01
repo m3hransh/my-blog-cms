@@ -5,7 +5,7 @@ services:
   blog:
     build: .
     ports:
-    - "1337:1337"
+    - "${EXPOSED_PORT}:1337"
     networks:
       - mehran-networks
 
