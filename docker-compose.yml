@@ -6,6 +6,8 @@ services:
     build: .
     depends_on:
     - "postgres-blog"
+    ports:
+    - "1337:1337"
 
   postgres-blog:
     image: postgres:13.3
