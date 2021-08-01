@@ -7,7 +7,7 @@ services:
     ports:
     - "1337:1337"
     networks:
-      mehran-networks
+      - mehran-networks
 
   postgres-blog:
     image: postgres:13.3
@@ -20,7 +20,7 @@ services:
     ports:
     - "5432:5432"
     networks:
-      mehran-networks
+      - mehran-networks
 
 networks: 
   mehran-networks:
