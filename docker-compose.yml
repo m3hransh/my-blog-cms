@@ -8,6 +8,8 @@ services:
     - "${EXPOSED_PORT}:1337"
     networks:
       - mehran-networks
+    volumes:
+      - upload_volume:/code/public/upload
 
   postgres-blog:
     image: postgres:13.3
@@ -28,3 +30,4 @@ networks:
     driver: bridge
 volumes:
   postgres_volume:
+  upload_volume:
