@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "projects",
   "info": {
-    "name": "Post",
+    "name": "Projects",
     "description": ""
   },
   "options": {
@@ -15,26 +15,13 @@
     "title": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "title"
-    },
-    "date": {
-      "type": "date"
-    },
     "excerpt": {
       "type": "text"
     },
-    "content": {
-      "type": "richtext"
+    "link": {
+      "type": "string"
     },
-    "metadata": {
-      "type": "component",
-      "repeatable": true,
-      "component": "page.seo"
-    },
-    "coverImage": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -45,16 +32,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "author": {
-      "via": "posts",
-      "model": "author"
-    },
-    "readTime": {
-      "type": "integer"
-    },
-    "views": {
-      "type": "integer"
     }
   }
 }
