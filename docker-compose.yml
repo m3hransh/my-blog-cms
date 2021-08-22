@@ -20,7 +20,8 @@ services:
     - "5432:5432"
     networks:
       - mehran-networks
-    volumes: postgres_volume:/var/lib/postgresql
+    volumes: 
+      - postgres_volume:/var/lib/postgresql
 
 networks: 
   mehran-networks:
