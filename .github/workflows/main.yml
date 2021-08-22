@@ -27,15 +27,22 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: SSH sever connection
-        uses: appleboy/ssh-action@master
+#         uses: appleboy/ssh-action@master
         
+#         with:
+#           host: ${{ secrets.HOST }}
+#           username: ${{ secrets.USERNAME }}
+#           key: ${{ secrets.OMG_SECRET }}
+#           port: ${{ secrets.PORT }}
+#           script: |
+#             cd my-blog-cms
+#             git fetch
+#             git checkout origin/main
+#             docker-compose up --build -d
+        uses: garygrossgarten/github-action-ssh@release
         with:
+          command: ls -a
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.OMG_SECRET }}
-          port: ${{ secrets.PORT }}
-          script: |
-            cd my-blog-cms
-            git fetch
-            git checkout origin/main
-            docker-compose up --build -d
+#           passphrase: ${{ secrets.PASSPHRASE }}
+          privateKey: ${{ secrets.OMG_SECRET}}
