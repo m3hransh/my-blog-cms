@@ -38,4 +38,4 @@ jobs:
             cd my-blog-cms
             git fetch
             git checkout origin/main
-            docker-compose up -d
+            docker-compose up --build -d
