@@ -45,7 +45,7 @@ jobs:
             cd my-blog-cms
             git fetch
             git checkout origin/main
-            docker-compose up -d
+            docker-compose build blog
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
 #           passphrase: ${{ secrets.PASSPHRASE }}
