@@ -41,7 +41,11 @@ jobs:
 #             docker-compose up --build -d
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ls -a
+          command: |
+            cd my-blog-cms
+            git fetch
+            git checkout origin/main
+            docker-compose up -d
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
 #           passphrase: ${{ secrets.PASSPHRASE }}
