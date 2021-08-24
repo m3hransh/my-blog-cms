@@ -49,6 +49,11 @@
         "Q3",
         "Finished"
       ]
+    },
+    "contributers": {
+      "collection": "author",
+      "via": "projects",
+      "dominant": true
     }
   }
 }
