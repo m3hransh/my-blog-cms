@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1337),
   // socket: '/tmp/nginx.socket', // only use if absolutely required
   // emitErrors: false,
-  // url: env('PUBLIC_URL', 'https://api.example.com'),
+  url: env('PUBLIC_URL', 'https://mehranshahidi.ir/cms'),
   // proxy: env.bool('IS_PROXIED', true),
   // cron: {
   //   enabled: env.bool('CRON_ENABLED', false),
