@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "excerpt": {
       "type": "text"
@@ -32,6 +33,22 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "lastUpdate": {
+      "type": "date"
+    },
+    "progress": {
+      "type": "enumeration",
+      "enum": [
+        "Initialize",
+        "Q1",
+        "Q2",
+        "Q3",
+        "Finished"
+      ]
     }
   }
 }
