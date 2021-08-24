@@ -9,7 +9,7 @@ services:
     networks:
       - mehran-networks
     volumes:
-      - upload_volume:/code/public/upload
+      - upload_volume:/code/public/uploads
 
   postgres-blog:
     image: postgres:13.3
