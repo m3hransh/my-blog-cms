@@ -27,6 +27,7 @@ services:
 
 networks: 
   mehran-networks:
+    name: "mehranCMS-networks"
     driver: bridge
 volumes:
   postgres_volume:
