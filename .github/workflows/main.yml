@@ -44,7 +44,7 @@ jobs:
           command: |
             cd my-blog-cms
             git fetch
-            git checkout origin/main
+            git reset --hard origin/main
             docker-compose up --build -d 
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
