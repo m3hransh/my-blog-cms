@@ -20,7 +20,7 @@ module.exports = ({ env }) => ({
       },
       secret: env('ADMIN_JWT_SECRET', 'someSecretKey'),
     },
-    url: env('PUBLIC_ADMIN_URL', '/cms/dashboard'),
+    // url: env('PUBLIC_ADMIN_URL', '/dashboard'),
     // autoOpen: false,
     // watchIgnoreFiles: [
     //   './my-custom-folder', // Folder

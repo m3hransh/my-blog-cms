@@ -55,6 +55,10 @@
     },
     "views": {
       "type": "integer"
+    },
+    "tags": {
+      "via": "posts",
+      "collection": "tags"
     }
   }
 }
