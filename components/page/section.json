@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_sections",
+  "info": {
+    "name": "section",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.items"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_mes",
+  "info": {
+    "name": "About-Me",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "metas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.seo"
+    },
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "page.section"
+      ]
+    }
+  }
+}
