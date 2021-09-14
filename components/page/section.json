@@ -13,7 +13,7 @@
     "description": {
       "type": "text"
     },
-    "Items": {
+    "items": {
       "type": "component",
       "repeatable": true,
       "component": "page.items"

@@ -11,7 +11,8 @@
       "type": "string"
     },
     "content": {
-      "type": "text"
+      "type": "text",
+      "maxLength": 100
     },
     "link": {
       "type": "string"
@@ -27,6 +28,12 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "issued": {
+      "type": "date"
+    },
+    "grade": {
+      "type": "string"
     }
   }
 }
