@@ -1,7 +1,8 @@
 FROM strapi/base:14-alpine
 
 WORKDIR /code
-
+# I separated this to cache the data
+# if there is no packaged installed
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
